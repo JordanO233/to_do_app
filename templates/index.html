@@ -25,9 +25,10 @@ xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65
         <p>{{todo.id}} : {{todo.task}} </p>
         {% if todo.complete==False %}
         <p>Task Incomplete. <a href="/update/{{todo.id}}" >Mark as complete</a>?</p>
+        {% else %}
+        <p>Task complete. <a href="/update/{{todo.id}}" >Mark as incomplete</a>?</p>
         {% endif %}
         <a href="/delete/{{todo.id}}"> Delete this task?</a>
-        <p>Task Complete</p>
         {% endfor %}
     </div>
 </body>
