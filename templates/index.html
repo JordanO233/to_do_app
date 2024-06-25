@@ -28,8 +28,10 @@ xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65
         {% else %}
         <p>Task complete. <a href="/update/{{todo.id}}" >Mark as incomplete</a>?</p>
         {% endif %}
+        {%I do not understand what href is%}
         <a href="/delete/{{todo.id}}"> Delete this task?</a>
         {% endfor %}
+        {%If the task is true is says complete or if its false it will say incomplete%}
     </div>
 </body>
 
